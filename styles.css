@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    font-family: "Inter", sans;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.3rem;
+    color: hsl(0, 0%, 100%);
+}
+
+span {
+    color: hsl(277, 75%, 53%);
+}
+
+p {
+    margin-top: 2em;
+    margin-bottom: 3.5em;
+    line-height: 1.8;
+    font-size: 1rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.filter {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277, 75%, 53%);
+    opacity: 50%;
+    z-index: 1;
+}
+
+.main-block {
+    background-color: hsl(244, 38%, 16%);
+    width: 75rem;
+    height: 30rem;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-block {
+    flex: 50%;
+    position: relative;
+}
+
+.image, .filter {
+    position: absolute;
+}
+
+.text-block {
+    flex: 50%;
+    padding: 5em;
+}
+
+.stats {
+    display: flex;
+    gap: 2rem;
+}
+
+.stat {
+    display: inline-block;
+    font-family: "Lexend Deca", sans;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: white;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.stat-head {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 500px) {
+
+    body {
+        height: auto;
+    }
+
+    .main-block {
+        width: 30rem;
+        height: 60rem;
+        flex-direction: column-reverse;
+        margin: 7em 2em;
+    }
+
+    .text-block {
+        flex: 60%;
+        padding: 2.5em;
+        text-align: center;
+    }
+
+    .image {
+        content: url("images/image-header-mobile.jpg")
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .img-block {
+        flex: 40%;
+    }
+}
