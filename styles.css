@@ -121,4 +121,8 @@ p {
     .img-block {
         flex: 40%;
     }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
 }
