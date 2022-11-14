@@ -101,7 +101,7 @@ p {
         width: 30rem;
         height: 60rem;
         flex-direction: column-reverse;
-        margin: 7em 2em;
+        margin: 7em 1em;
     }
 
     .text-block {
